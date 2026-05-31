@@ -1,0 +1,20 @@
+# Secrets
+.env
+course_api_key.txt
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated vector stores
+chroma_gemma/
+chroma_openai/
+
+# Local embedding model
+embeddinggemma-300m/
+
+# macOS
+.DS_Store
