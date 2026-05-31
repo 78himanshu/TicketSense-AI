@@ -4,7 +4,11 @@ A ticket classification system that compares OpenAI embeddings and local Gemma e
 
 ## Overview
 
-TicketSense-AI builds two vector stores from customer support ticket data: one using OpenAI embeddings and another using the local `google/embeddinggemma-300m` embedding model. The system then evaluates zero-shot, KNN, and few-shot classification approaches on test tickets and prints classification reports to compare model performance.
+TicketSense-AI is an embedding-powered ticket classification system that compares cloud-hosted and locally deployed embedding models using modern Retrieval-Augmented Machine Learning workflows.
+
+The project combines Hugging Face, LangChain, ChromaDB, OpenAI Embeddings, and Google's EmbeddingGemma-300M model to evaluate multiple classification strategies including zero-shot classification, K-Nearest Neighbor (KNN) retrieval, and few-shot learning.
+
+By leveraging vector databases and semantic embeddings, the system demonstrates how support tickets can be classified without training a traditional supervised machine learning model.
 
 The project demonstrates how vector databases and embedding models can be used for semantic ticket classification, routing, and support automation.
 
@@ -43,6 +47,49 @@ The pipeline:
 - Scikit-learn
 - Polars
 - NumPy
+
+## AI & Retrieval Components
+
+This project integrates several modern GenAI and retrieval technologies:
+
+### Hugging Face
+
+- Uses Google's `embeddinggemma-300m` embedding model
+- Runs embeddings locally without requiring cloud inference
+- Utilizes Sentence Transformers for embedding generation
+
+### LangChain
+
+- Manages embedding pipelines
+- Provides vector store integration
+- Simplifies retrieval workflows
+
+### ChromaDB
+
+- Stores vector embeddings
+- Supports semantic similarity search
+- Powers KNN and few-shot retrieval strategies
+
+### OpenAI
+
+- Provides cloud-hosted embedding generation
+- Serves as a benchmark against local embedding models
+
+### Classification Approaches
+
+The project evaluates three classification strategies:
+
+#### Zero-Shot Classification
+
+Predicts ticket categories without retrieving examples.
+
+#### K-Nearest Neighbor (KNN)
+
+Retrieves semantically similar tickets from the vector database and predicts labels based on nearest neighbors.
+
+#### Few-Shot Classification
+
+Retrieves relevant examples from the vector store and uses them as contextual examples for classification.
 
 ## Project Structure
 
@@ -158,6 +205,10 @@ These metrics help compare the effectiveness of different embedding models and c
 Support ticket classification is a common real-world machine learning task. Automating ticket routing can reduce manual triage, improve response time, and help support teams prioritize issues more efficiently.
 
 This project explores how embedding-based retrieval can be used as an alternative to traditional supervised classification, especially when labeled data is limited.
+
+This project demonstrates a modern retrieval-first approach to machine learning classification. Instead of training a dedicated classifier, ticket categories are inferred through semantic embeddings and vector retrieval.
+
+The workflow mirrors techniques used in production AI systems that combine Hugging Face models, vector databases, retrieval pipelines, and LLM-powered reasoning to solve classification and search problems at scale.
 
 ## Future Improvements
 
