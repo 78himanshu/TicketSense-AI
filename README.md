@@ -12,7 +12,7 @@ By leveraging vector databases and semantic embeddings, the system demonstrates 
 
 The project demonstrates how vector databases and embedding models can be used for semantic ticket classification, routing, and support automation.
 
-## What This Project Does
+## What Ticketzsense-AI Project Does
 
 The pipeline:
 
