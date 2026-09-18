@@ -4,7 +4,7 @@ A ticket classification system that compares OpenAI embeddings and local Gemma e
 
 ## Overview
 
-TicketSense-AI is an embedding-powered ticket classification system that compares cloud-hosted and locally deployed embedding models using modern Retrieval-Augmented Machine Learning workflows.
+TicketSense-AI is an embedding-powered ticket classification system that compares cloud-hosted and locally deployed embedding models using modern Retrieval-Augmented Generation and Machine Learning workflows.
 
 The project combines Hugging Face, LangChain, ChromaDB, OpenAI Embeddings, and Google's EmbeddingGemma-300M model to evaluate multiple classification strategies including zero-shot classification, K-Nearest Neighbor (KNN) retrieval, and few-shot learning.
 
