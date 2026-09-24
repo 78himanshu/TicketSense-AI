@@ -221,5 +221,5 @@ The workflow mirrors techniques used in production AI systems that combine Huggi
 
 ## Author
 
-Himanshu Paithane
+Himanshu 
 
