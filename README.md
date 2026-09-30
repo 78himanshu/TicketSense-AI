@@ -1,6 +1,6 @@
 # TicketSense-AI
 
-A ticket classification system that compares OpenAI embeddings and local Gemma embeddings using LangChain, Chroma, and multiple classification strategies.
+A ticket classification system that compares OpenAI embeddings and local Gemma embeddings using LangChain, ChromaDB, and multiple classification strategies.
 
 ## Overview
 
